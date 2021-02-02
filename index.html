@@ -5,16 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歐告手作雞蛋糕</title>
-    <style type="css">
-        p{
-            color: darkgrey;
-            font-size: 20px;
-            background-color: #faaa;
+    <!-- reset -->
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .header{
+            background-color: #000;
+            display: flex;
+            padding: 6px 10px;
         }
+        .header nav{
+            text-align: right;
+            width: 100%;
+            font-size: 0px;
+        }
+        .header nav a{
+            font-size: 16px;
+            display: inline-block;
+            line-height: 52px;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+        .header nav a:hover{
+            background-color: wheat;
+        }
+         
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <a href="#"><img src='https://picsum.photos/80/60'></a>
+        <nav>
+            <a href="#">首頁</a>
+            <a href="#">關於我們</a>
+            <a href="#">聯絡資訊</a>
+            <a href="#">網站地圖</a>
+        </nav>
+    </div>
+    <div class="banner">
+        <img src="https://picsum.photos/1200/200">
+    </div>
     <h1>歐告手作雞蛋糕</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste illo obcaecati ab unde sunt illum velit omnis
         earum, minus fugiat ipsam vel fugit voluptas, odio nobis sit officia rem! Ad?</p>
