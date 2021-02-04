@@ -26,10 +26,11 @@
             padding: 6px 0px;
         }
 
-        .header nav a{
+        .header nav a {
             font-size: 16px;
             display: inline-block;
-            line-height: 72px;  /*計算line-height:logo+logo的padding來垂直置中*/
+            line-height: 72px;
+            /*計算line-height:logo+logo的padding來垂直置中*/
             text-align: center;
             text-decoration: none;
             padding: 0px 10px;
@@ -39,27 +40,89 @@
         .header nav a:hover {
             background-color: rgb(219, 175, 93);
         }
-        .banner img{
-            width:100%;
+
+        .banner img {
+            width: 100%;
         }
-        .path{
-            display:flex;
+
+        .path {
+            display: flex;
         }
-        .path li{
+
+        .path li {
             position: relative;
         }
-        .path li a{
+
+        .path li a {
             text-decoration: none;
             color: #aaa;
         }
-        .about ul li{
+
+        .path li {
             padding: 10px 10px;
-            
+
         }
-        .path li+li::before{
-            content:'/';
+
+        .path li+li::before {
+            content: '/';
             position: absolute;
-            left:0;
+            left: 0;
+        }
+
+        .about {}
+
+        .wrap {
+            /*固定寬的容器*/
+            width: 960px;
+            margin: auto;
+        }
+
+        .about .wrap {
+            display: flex;
+        }
+
+        .about .wrap .item {
+            width: 300px;
+            margin: 0 10px;
+            text-align: center;
+            /*小圖置中*/
+        }
+
+        .about>h2 {
+            width: 100%;
+            font-size: 42px;
+            text-align: center;
+        }
+
+        .about>p {
+            width: 660px;
+            margin: auto;
+            /*代表讓瀏覽器自己設定*/
+            text-align: center;
+            padding: 20px 0 40px;
+        }
+        .products{
+            margin: 10px;
+            background-color: #ccc;
+        }
+        .products .wrap{
+            display:flex;
+        }
+        .products .item{
+            width: 50%;
+        }
+        .products .pic{
+            width: 100%;
+            text-align: center;
+            margin: 20px;
+        }
+        .products .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -77,31 +140,52 @@
     <div class="banner">
         <img src="https://picsum.photos/1200/200">
     </div>
+
+    <ul class="path">
+        <li><a href='#'>關於我們</a></li>
+        <li><a href='#'>品牌故事</a></li>
+        <li><a href='#'>口味介紹</a></li>
+    </ul>
+
     <div class="about">
-        <ul class="path">
-            <li><a href='#'>關於我們</a></li>
-            <li><a href='#'>品牌故事</a></li>
-            <li><a href='#'>口味介紹</a></li>
-        </ul>
-        
+        <h2>關於我們</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio fugit quasi nam nesciunt sit itaque
+            inventore pariatur repellendus placeat.</p>
         <div class='wrap'>
-            <img src="https://picsum.photos/100/80">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat quae maxime quos fugiat
-                magnam cupiditate vel doloremque consequuntur corrupti.</p>
-        </div>
-        <div class='wrap'>
-            <img src="https://picsum.photos/100/80">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat quae maxime quos fugiat
-                magnam cupiditate vel doloremque consequuntur corrupti.</p>
-        </div>
-        <div class='wrap'>
-            <img src="https://picsum.photos/100/80">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat quae maxime quos fugiat
-                magnam cupiditate vel doloremque consequuntur corrupti.</p>
+            <div class='item'>
+                <img src="https://picsum.photos/100/80">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat quae maxime quos fugiat
+                    magnam cupiditate vel doloremque consequuntur corrupti.</p>
+            </div>
+            <div class='item'>
+                <img src="https://picsum.photos/100/80">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat quae maxime quos fugiat
+                    magnam cupiditate vel doloremque consequuntur corrupti.</p>
+            </div>
+            <div class='item'>
+                <img src="https://picsum.photos/100/80">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat quae maxime quos fugiat
+                    magnam cupiditate vel doloremque consequuntur corrupti.</p>
+            </div>
         </div>
     </div>
 
-    <h1>歐告手作雞蛋糕</h1>
+    <div class="products">
+        <div class="wrap">
+            <div class="item pic">
+                <img src="https://picsum.photos/300/200">
+            </div>
+            <div class="item text">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio ratione doloremque numquam
+                    officia laudantium porro dolorum minus molestiae! Illum labore molestias reprehenderit quae,
+                    provident consequatur magnam illo corrupti voluptate!</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
