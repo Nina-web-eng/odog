@@ -18,7 +18,6 @@
             text-align: right;
             width: 100%;
             font-size: 0px;
-            ;
         }
 
         /*讓logo垂直置中*/
@@ -27,10 +26,11 @@
             padding: 6px 0px;
         }
 
-        .header nav a {
+        .header nav a{
             font-size: 16px;
             display: inline-block;
-            line-height: 52px;
+            line-height: 72px;  /*計算line-height:logo+logo的padding來垂直置中*/
+            text-align: center;
             text-decoration: none;
             padding: 0px 10px;
             color: #fff
@@ -38,6 +38,28 @@
 
         .header nav a:hover {
             background-color: rgb(219, 175, 93);
+        }
+        .banner img{
+            width:100%;
+        }
+        .path{
+            display:flex;
+        }
+        .path li{
+            position: relative;
+        }
+        .path li a{
+            text-decoration: none;
+            color: #aaa;
+        }
+        .about ul li{
+            padding: 10px 10px;
+            
+        }
+        .path li+li::before{
+            content:'/';
+            position: absolute;
+            left:0;
         }
     </style>
 </head>
@@ -56,11 +78,12 @@
         <img src="https://picsum.photos/1200/200">
     </div>
     <div class="about">
-        <div class="path">
-            <span>關於我們</span>
-            <span>品牌故事</span>
-            <span>口味介紹</span>
-        </div>
+        <ul class="path">
+            <li><a href='#'>關於我們</a></li>
+            <li><a href='#'>品牌故事</a></li>
+            <li><a href='#'>口味介紹</a></li>
+        </ul>
+        
         <div class='wrap'>
             <img src="https://picsum.photos/100/80">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat quae maxime quos fugiat
